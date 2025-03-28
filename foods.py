@@ -1,3 +1,5 @@
+# resource for values --> https://www.nutritionix.com/
+
 double_cheese_burger = [{
     'salt': 0.6,    
     'sugar': 4.4,    
