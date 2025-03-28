@@ -15,7 +15,7 @@ The algorithm utilizes **K-Nearest Neighbors (KNN)**, a popular and simple machi
 The **KNN algorithm** works well here due to the relatively clear correlation between food features and their healthiness. Some correlations include:
 
 - **High fat** levels typically make food less healthy 🧈.
-- **Low sugar** levels are linked to healthier foods 🍭❌.
+- **Low sugar** levels are linked to healthier foods 🍭.
 - **High fiber** content is associated with better health 🌾.
 - **Higher protein** is usually better for muscle growth and overall health 🍗.
 
@@ -46,7 +46,7 @@ Please note that this algorithm is a **work-in-progress** and should NOT be cons
 - **Feature Selection**: Only **obvious nutritional features** were chosen for simplicity. This limitation impacts the algorithm's ability to produce highly accurate predictions in more complex scenarios.
 - **Example Limitations**:
   - **Coca-Cola**: Due to its low fat and salt content, the algorithm might label it as "healthy". 🥤❌
-  - **Yogurt**: Although yogurt is generally healthy, the algorithm might incorrectly classify it as "unhealthy" due to its high fat content and low fiber. 🍦❌
+  - **Yogurt**: Although yogurt is generally healthy, the algorithm might incorrectly classify it as "unhealthy" due to its high fat content and low fiber. 🥛❌
 
 ### 🚨 Important Reminder
 This algorithm is not a replacement for expert dietary advice. It is intended for **educational purposes** and **exploration of basic machine learning concepts** only.
