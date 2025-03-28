@@ -34,6 +34,7 @@ The **foods.py** file contains a collection of food items stored as dictionaries
 - **fiber** (g/100g)
 - **vitamin** (mg/100g)
 
+The values have come from **https://www.nutritionix.com/**
 These foods are imported into **main.py**, and different food items can be assigned to the `tests` variable to check their healthiness.
 
 ---
