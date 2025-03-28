@@ -1,10 +1,10 @@
-import foods
 import pandas as pd, matplotlib.pyplot as plt
+import foods
 
 df = pd.read_csv('foods_dataset.csv')
 
-# you can change these values
-tests = foods.avocado
+# you can select different foods here
+tests = foods.chocolate_cake
 k_value = 5
 
 def predict(test,h_real):
@@ -23,7 +23,6 @@ def predict(test,h_real):
         nearest_samples = updated_df.nsmallest(k_value,feature)
         for exp in expected_features:
             results.append({'exp': exp, 'val': float(nearest_samples[exp].mean())})
-    print(results)
 
     # show false predictions only
     df_results = pd.DataFrame(results)
@@ -42,7 +41,7 @@ categoric_cols = df.select_dtypes(include='object').columns
 for col in categoric_cols:
     df[col] = df[col].fillna(df[col].mode()[0])
 
-# Bring original data for tasting the algorithm
+# you might activate this part to test the algorithm with the original data
 # tests = [df.iloc[i].to_dict() for i in range(100)]
 
 # Change str to float
@@ -57,8 +56,8 @@ for test in tests:
 
 # Check the correlation of the dataset's features
 # print(df.corr())
-# print(f"{df['vitamin'].max()} ==== {df['vitamin'].min()}")
 
+# you can change the features for plotting different features
 x_axis = 'fat'
 y_axis = 'sugar'
 colors = ['green' if h == 1 else 'red' for h in df['healthiness']]
